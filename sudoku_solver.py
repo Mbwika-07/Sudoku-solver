@@ -17,6 +17,8 @@ def is_valid_move(grid, row, col, number):
     return True
 
 
+
+
 def solve(grid, row, col):
     
     if col == 9:   # If we've gone through all columns, move to
@@ -40,6 +42,8 @@ def solve(grid, row, col):
             
     return False
      
+     
+     
 grid = [[0, 0, 0,  0, 0, 0,  6, 8, 0],
         [0, 0, 0,  0, 7, 3,  0, 0, 9],
         [3, 0, 9,  0, 0, 0,  0, 4, 5],
@@ -57,3 +61,6 @@ if solve(grid, 0, 0):
         print()
 else:
     print("No solution for this sudoku")
+    
+    
+    
