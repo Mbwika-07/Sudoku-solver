@@ -1,5 +1,6 @@
 def is_valid_move(grid, row, col, number):
     
+    
     for x in range(9):
         if grid[row][x] == number:  # Check the column
             return False
@@ -12,11 +13,9 @@ def is_valid_move(grid, row, col, number):
     corner_col = col - col % 3
     for x in range(3):
         for y in range(3):
-            if grid[corner_row + x][corner_col + y] == number:
+            if grid[corner_row + x][corner_col + y] == number: #comment
                 return False
     return True
-
-
 
 
 def solve(grid, row, col):
