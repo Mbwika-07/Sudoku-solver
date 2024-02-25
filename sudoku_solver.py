@@ -18,6 +18,8 @@ def is_valid_move(grid, row, col, number):
 
 
 
+
+
 def solve(grid, row, col):
     
     if col == 9:   # If we've gone through all columns, move to
